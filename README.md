@@ -3,7 +3,7 @@
 
 # Golang Notlarım
 
-@wip
+https://vigo.github.io/golang-notlarim/
 
 ---
 
@@ -12,15 +12,16 @@
 Python 3.9.5 ile birlikte gereken python paketleri;
 
 ```bash
-$ pip install mkdocs mkdocs-material
+pip install mkdocs mkdocs-material
 ```
 
 ### Rake Tasks
 
 ```bash
-$ rake -T
+rake -T
 
 rake default     # default task
+rake deploy      # deploy
 rake run_server  # run server
 ```
 
