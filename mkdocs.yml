@@ -1,0 +1,9 @@
+site_name: Golang Notlarım
+theme:
+  name: material
+  icon:
+    logo: material/language-go
+
+extra_css:
+  - stylesheets/extra.css
+
