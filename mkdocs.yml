@@ -1,9 +1,37 @@
 site_name: Golang Notlarım
+site_description: Uğur “vigo” Özyılmazel tarafından hazırlanan golang programlama dili ile ilgili notlar.
+site_url: https://vigo.github.io/golang-notlarim/
+repo_name: vigo/golang-notlarim
+repo_url: https://github.com/vigo/golang-notlarim
+
 theme:
+  language: tr
   name: material
   icon:
     logo: material/language-go
+  favicon: images/favicon.png
+  features:
+    - toc.integrate
 
 extra_css:
   - stylesheets/extra.css
 
+markdown_extensions:
+  - toc:
+      permalink: true
+  - extra
+  - codehilite
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - pymdownx.tabbed
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+
+nav:
+  - "İçindekiler": index.md
+  - "Gömülü Tipler":
+    - "İndeks": sections/01-gomulu-tipler/index.md
+    - "Zero Value’ler": sections/01-gomulu-tipler/zero-valueler.md
+    - "Rune ile Byte": sections/01-gomulu-tipler/rune-ile-byte.md
