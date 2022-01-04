@@ -4,6 +4,9 @@ Tipler, otomatik olarak, kendi zero value’leri ile `initialize` edilir. Yani;
 `var s string` dendiği zaman, `s` otomatik olarak `string`’in zero value’sü olan
 `""` değerini alır ve artık `s`’in değeri boş string; `""` olur.
 
+`var` anahtar kelimesini görünce **declare and initialize** oluyor diye
+düşünmeli.
+
 | Tip | Zero Value’su |
 | --- | ---------: |
 | `string` | `""` |
@@ -78,3 +81,12 @@ func main() {
 //          []struct{}|24|bytes|nil?|true
 // map[string]struct{}| 8|bytes|nil?|true
 ```
+
+## Word Büyüklüğü (*size*)
+
+**Integer** ve **Pointer**’ları hafızaya yerleştirmek için (*memory allocation*)
+kullanılan ölçü **word**’dür. Aynı Amiga 68000 assembly’deki gibi; `byte`,
+`word`, `long-word` ...
+
+- 32 bit işlemci için `4 byte` tahis edilir.
+- 64 bit işlemci için `8 byte` tahis edilir.
