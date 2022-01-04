@@ -2,22 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://vigo.github.io/golang-notlarim/</loc>
-         <lastmod>2022-01-01</lastmod>
+         <lastmod>2022-01-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://vigo.github.io/golang-notlarim/sections/01-gomulu-tipler/</loc>
-         <lastmod>2022-01-01</lastmod>
+         <lastmod>2022-01-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://vigo.github.io/golang-notlarim/sections/01-gomulu-tipler/rune-ile-byte/</loc>
-         <lastmod>2022-01-01</lastmod>
+         <lastmod>2022-01-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://vigo.github.io/golang-notlarim/sections/01-gomulu-tipler/zero-valueler/</loc>
-         <lastmod>2022-01-01</lastmod>
+         <lastmod>2022-01-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>

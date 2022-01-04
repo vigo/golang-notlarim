@@ -275,9 +275,40 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Zero Value’ler
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         Zero Value’ler
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="İçindekiler">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      İçindekiler
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#word-buyuklugu-size" class="md-nav__link">
+    Word Büyüklüğü (size)
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -325,6 +356,8 @@
 <p>Tipler, otomatik olarak, kendi zero value’leri ile <code>initialize</code> edilir. Yani;
 <code>var s string</code> dendiği zaman, <code>s</code> otomatik olarak <code>string</code>’in zero value’sü olan
 <code>""</code> değerini alır ve artık <code>s</code>’in değeri boş string; <code>""</code> olur.</p>
+<p><code>var</code> anahtar kelimesini görünce <strong>declare and initialize</strong> oluyor diye
+düşünmeli.</p>
 <table>
 <thead>
 <tr>
@@ -440,6 +473,14 @@
 <span class="c1">//          []struct{}|24|bytes|nil?|true</span><span class="w"></span>
 <span class="c1">// map[string]struct{}| 8|bytes|nil?|true</span><span class="w"></span>
 </code></pre></div>
+<h2 id="word-buyuklugu-size">Word Büyüklüğü (<em>size</em>)<a class="headerlink" href="#word-buyuklugu-size" title="Permanent link">&para;</a></h2>
+<p><strong>Integer</strong> ve <strong>Pointer</strong>’ları hafızaya yerleştirmek için (<em>memory allocation</em>)
+kullanılan ölçü <strong>word</strong>’dür. Aynı Amiga 68000 assembly’deki gibi; <code>byte</code>,
+<code>word</code>, <code>long-word</code> ...</p>
+<ul>
+<li>32 bit işlemci için <code>4 byte</code> tahis edilir.</li>
+<li>64 bit işlemci için <code>8 byte</code> tahis edilir.</li>
+</ul>
 
               
             </article>
