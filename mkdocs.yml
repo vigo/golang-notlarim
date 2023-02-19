@@ -31,7 +31,13 @@ markdown_extensions:
 
 nav:
   - "İçindekiler": index.md
+  - "Dil Kuralları": sections/00-kurallar/index.md
   - "Gömülü Tipler":
     - "İndeks": sections/01-gomulu-tipler/index.md
+    - "string’ler": sections/01-gomulu-tipler/stringler.md
+    - "bool’lar": sections/01-gomulu-tipler/boollar.md
+    - "Nümerikler": sections/01-gomulu-tipler/numerikler.md
+    - "Kompozit Tipler": sections/01-gomulu-tipler/kompozit-tipler.md
+    - "Jenerikler": sections/01-gomulu-tipler/jenerikler.md
     - "Zero Value’ler": sections/01-gomulu-tipler/zero-valueler.md
     - "Rune ile Byte": sections/01-gomulu-tipler/rune-ile-byte.md
