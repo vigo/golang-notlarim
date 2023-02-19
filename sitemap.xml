@@ -2,22 +2,52 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://vigo.github.io/golang-notlarim/</loc>
-         <lastmod>2022-01-04</lastmod>
+         <lastmod>2023-02-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://vigo.github.io/golang-notlarim/sections/00-kurallar/</loc>
+         <lastmod>2023-02-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://vigo.github.io/golang-notlarim/sections/01-gomulu-tipler/</loc>
-         <lastmod>2022-01-04</lastmod>
+         <lastmod>2023-02-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://vigo.github.io/golang-notlarim/sections/01-gomulu-tipler/boollar/</loc>
+         <lastmod>2023-02-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://vigo.github.io/golang-notlarim/sections/01-gomulu-tipler/jenerikler/</loc>
+         <lastmod>2023-02-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://vigo.github.io/golang-notlarim/sections/01-gomulu-tipler/kompozit-tipler/</loc>
+         <lastmod>2023-02-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://vigo.github.io/golang-notlarim/sections/01-gomulu-tipler/numerikler/</loc>
+         <lastmod>2023-02-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://vigo.github.io/golang-notlarim/sections/01-gomulu-tipler/rune-ile-byte/</loc>
-         <lastmod>2022-01-04</lastmod>
+         <lastmod>2023-02-19</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://vigo.github.io/golang-notlarim/sections/01-gomulu-tipler/stringler/</loc>
+         <lastmod>2023-02-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://vigo.github.io/golang-notlarim/sections/01-gomulu-tipler/zero-valueler/</loc>
-         <lastmod>2022-01-04</lastmod>
+         <lastmod>2023-02-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>

@@ -10,18 +10,20 @@
       
       
       
-        <link rel="canonical" href="https://vigo.github.io/golang-notlarim/sections/01-gomulu-tipler/rune-ile-byte/">
+        <link rel="canonical" href="https://vigo.github.io/golang-notlarim/sections/01-gomulu-tipler/numerikler/">
       
       
-        <link rel="prev" href="../zero-valueler/">
+        <link rel="prev" href="../boollar/">
       
+      
+        <link rel="next" href="../kompozit-tipler/">
       
       <link rel="icon" href="../../../images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.13">
     
     
       
-        <title>Rune ile Byte - Golang Notlarım</title>
+        <title>Nümerikler - Golang Notlarım</title>
       
     
     
@@ -71,7 +73,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#rune-ile-byte" class="md-skip">
+        <a href="#numerikler" class="md-skip">
           Ana içeriğe geç
         </a>
       
@@ -104,7 +106,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Rune ile Byte
+              Nümerikler
             
           </span>
         </div>
@@ -315,11 +317,21 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../numerikler/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Nümerikler
       </a>
+      
     </li>
   
 
@@ -371,21 +383,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../rune-ile-byte/" class="md-nav__link">
         Rune ile Byte
       </a>
-      
     </li>
   
 
@@ -415,49 +417,8 @@
   
 
 
-<h1 id="rune-ile-byte">Rune ile Byte<a class="headerlink" href="#rune-ile-byte" title="Permanent link">&para;</a></h1>
-<ul>
-<li><code>rune</code> aslında <code>int32</code>’nin takma adı (<em>alias’ı</em>).</li>
-<li><code>byte</code> aslında <code>uint8</code>’in takma adı.</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th>Tip</th>
-<th align="right">Değer</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>int32</code></td>
-<td align="right"><code>-2147483648</code> ile <code>2147483647</code> arasında değer taşır.</td>
-</tr>
-<tr>
-<td><code>uint8</code></td>
-<td align="right"><code>0</code> ile <code>255</code> arasında değer taşır.</td>
-</tr>
-</tbody>
-</table>
-<p><code>uğur</code> 4 harfli bir isim. <code>ğ</code> ise aslında <code>8 bit</code> için <code>2 byte</code>’lık bir değer.
-Halbuki <code>rune</code> ile <code>32 bit</code>’lik değer taşıyabildiğimiz için yani içinde <code>32 bit</code>’lik
-değerler tutan bir <strong>slice</strong> olduğu için, <code>rune</code> olarak <strong>4 karakter</strong> olan isim,
-<code>byte</code> olarak <strong>5 karakter</strong> olur :)</p>
-<div class="highlight"><pre><span></span><code><span class="kn">package</span><span class="w"> </span><span class="nx">main</span>
-
-<span class="kn">import</span><span class="w"> </span><span class="s">&quot;fmt&quot;</span>
-
-<span class="kd">func</span><span class="w"> </span><span class="nx">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nx">s</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="s">&quot;uğur&quot;</span><span class="w"> </span><span class="c1">// ğ önemli</span>
-
-<span class="w">    </span><span class="nx">fmt</span><span class="p">.</span><span class="nx">Printf</span><span class="p">(</span><span class="s">&quot;%10T %[1]v\n&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">s</span><span class="p">)</span>
-<span class="w">    </span><span class="nx">fmt</span><span class="p">.</span><span class="nx">Printf</span><span class="p">(</span><span class="s">&quot;%10T %[1]v\n&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">[]</span><span class="nb">rune</span><span class="p">(</span><span class="nx">s</span><span class="p">))</span>
-<span class="w">    </span><span class="nx">fmt</span><span class="p">.</span><span class="nx">Printf</span><span class="p">(</span><span class="s">&quot;%10T %[1]v\n&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">[]</span><span class="nb">byte</span><span class="p">(</span><span class="nx">s</span><span class="p">))</span>
-<span class="p">}</span>
-
-<span class="c1">//  string uğur</span>
-<span class="c1">// []int32 [117 287 117 114]     // 4 karakter</span>
-<span class="c1">// []uint8 [117 196 159 117 114] // 5 karakter</span>
-</code></pre></div>
+<h1 id="numerikler">Nümerikler<a class="headerlink" href="#numerikler" title="Permanent link">&para;</a></h1>
+<p>@wip</p>
 
 
 
